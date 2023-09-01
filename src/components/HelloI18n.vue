@@ -15,6 +15,12 @@ export default {
 {
   "en": {
     "hello": "Hello i18n in SFC!"
+  },
+  "hi": {
+    "hello": "एसएफसी में नमस्ते i18n!"
+  },
+  "fr": {
+    "hello": "Bonjour i18n dans SFC"
   }
 }
 </i18n>
