@@ -1,5 +1,6 @@
 {
   "message": "Hello i18n from Global!",
+  "car": "no car | one car | {count} cars",
   "language_select_info": "Select the language you want to use",
   "selected_language": "You have selected english '{language}'",
   "parent": {

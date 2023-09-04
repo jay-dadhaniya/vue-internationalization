@@ -15,6 +15,10 @@
       {{ $t("selected_language", { language: selected_language }) }}
     </div>
 
+    <p>{{ $tc('car', 0) }}</p>
+    <p>{{ $tc('car', 1) }}</p>
+    <p>{{ $tc('car', 10, { count: 10 }) }}</p>
+
     <h4>{{ $t('message') }}</h4>
     <h4 v-html="$t('hello')"></h4>
 
