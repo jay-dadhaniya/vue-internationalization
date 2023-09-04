@@ -11,6 +11,10 @@
       </select>
     </div>
 
+    <div style="margin-top: 30px; font-size: larger">
+      {{ $t("selected_language", { language: selected_language }) }}
+    </div>
+
     <h4>{{ $t('message') }}</h4>
     <h4>{{ $t('hello') }}</h4>
   </div>
@@ -25,9 +29,20 @@ export default {
     return {
       selectedLanguage: 'en',
       languages: [],
-      i18n
+      languagesMap: {
+        en: "English",
+        fr: "French",
+        hi: "Hindi",
+      },
     }
   },
+
+  computed: {
+    selected_language() {
+      return this.$t(this.languagesMap[this.selectedLanguage]);
+    },
+  },
+
   created() {
     this.languages = languages;
     this.selectedLanguage = localStorage.getItem('selectedLanguage') || selectedLocale || 'en'

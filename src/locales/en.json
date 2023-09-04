@@ -1,4 +1,5 @@
 {
   "message": "Hello i18n from Global!",
-  "language_select_info": "Select the language you want to use"
+  "language_select_info": "Select the language you want to use",
+  "selected_language": "You have selected english '{language}'"
 }
