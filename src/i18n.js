@@ -82,9 +82,26 @@ const dateTimeFormats = {
   }
 }
 
+const numberFormats = {
+  'en-US': {
+    currency: {
+      style: 'currency',
+      currency: 'USD'
+    }
+  },
+  'ja-JP': {
+    currency: {
+      style: 'currency',
+      currency: 'JPY',
+      currencyDisplay: 'symbol'
+    }
+  }
+}
+
 export default new VueI18n({
   locale: process.env.VUE_APP_I18N_LOCALE || 'hi',
   fallbackLocale: process.env.VUE_APP_I18N_FALLBACK_LOCALE || 'hi',
   messages: loadLocaleMessages(),
-  dateTimeFormats
+  dateTimeFormats,
+  numberFormats
 })

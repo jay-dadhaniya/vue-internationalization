@@ -15,6 +15,10 @@
       {{ $t("selected_language", { language: selected_language }) }}
     </div>
 
+    <h4>Number localization</h4>
+    <p>{{ $n(100, 'currency', 'en-US') }}</p>
+    <p>{{ $n(100, 'currency', 'ja-JP') }}</p>
+
     <h4>DateTime localization</h4>
     <p>{{ $d(new Date(), 'short', 'en-US') }}</p>
     <p>{{ $d(new Date(), 'long', 'ja-JP') }}</p>
