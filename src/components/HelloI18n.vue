@@ -4,7 +4,7 @@
       {{ $t('language_select_info') }}
     </h1>
     <div>
-      <select v-model="$i18n.locale">
+      <select v-model="selectedLanguage">
         <option v-for="lang in languages" :key="lang" :value="lang">
           {{ lang }}
         </option>
@@ -17,11 +17,32 @@
 </template>
 
 <script>
+import i18n from "@/i18n";
+
 export default {
   name: 'HelloI18n',
   data() {
     return {
-      languages: ['en', 'hi', 'fr']
+      selectedLanguage: 'en',
+      languages: ['en', 'hi', 'fr'],
+      i18n
+    }
+  },
+  created() {
+    this.selectedLanguage = localStorage.getItem('selectedLanguage') || 'en'
+    this.setLanguage(this.selectedLanguage)
+  },
+
+  watch: {
+    selectedLanguage(value) {
+      this.setLanguage(value)
+    }
+  },
+
+  methods: {
+    setLanguage(lang) {
+      localStorage.setItem('selectedLanguage', lang)
+      i18n.locale = this.selectedLanguage
     }
   }
 }
