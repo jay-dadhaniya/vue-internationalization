@@ -16,8 +16,40 @@ function loadLocaleMessages () {
   return messages
 }
 
+function checkDefaultLanguage() {
+  let matched = null;
+  let languages = Object.getOwnPropertyNames(loadLocaleMessages());
+  languages.forEach((lang) => {
+    if (lang === navigator.language) {
+      matched = lang;
+    }
+  });
+  if (!matched) {
+    languages.forEach((lang) => {
+      let languagePartials = navigator.language.split("-")[0];
+      if (lang === languagePartials) {
+        matched = lang;
+      }
+    });
+  }
+  if (!matched) {
+    languages.forEach((lang) => {
+      let languagePartials = navigator.language.split("-")[0];
+      if (lang.split("-")[0] === languagePartials) {
+        matched = lang;
+      }
+    });
+  }
+  console.log("matched", matched);
+  return matched;
+}
+
+export const selectedLocale = checkDefaultLanguage();
+
+export const languages = Object.getOwnPropertyNames(loadLocaleMessages());
+
 export default new VueI18n({
-  locale: process.env.VUE_APP_I18N_LOCALE || 'en',
-  fallbackLocale: process.env.VUE_APP_I18N_FALLBACK_LOCALE || 'en',
+  locale: process.env.VUE_APP_I18N_LOCALE || 'hi',
+  fallbackLocale: process.env.VUE_APP_I18N_FALLBACK_LOCALE || 'hi',
   messages: loadLocaleMessages()
 })

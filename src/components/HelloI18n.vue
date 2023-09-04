@@ -17,19 +17,20 @@
 </template>
 
 <script>
-import i18n from "@/i18n";
+import i18n, { languages, selectedLocale } from "@/i18n";
 
 export default {
   name: 'HelloI18n',
   data() {
     return {
       selectedLanguage: 'en',
-      languages: ['en', 'hi', 'fr'],
+      languages: [],
       i18n
     }
   },
   created() {
-    this.selectedLanguage = localStorage.getItem('selectedLanguage') || 'en'
+    this.languages = languages;
+    this.selectedLanguage = localStorage.getItem('selectedLanguage') || selectedLocale || 'en'
     this.setLanguage(this.selectedLanguage)
   },
 
