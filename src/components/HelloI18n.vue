@@ -15,6 +15,11 @@
       {{ $t("selected_language", { language: selected_language }) }}
     </div>
 
+    <h4>DateTime localization</h4>
+    <p>{{ $d(new Date(), 'short', 'en-US') }}</p>
+    <p>{{ $d(new Date(), 'long', 'ja-JP') }}</p>
+
+    <h4>Pluralization</h4>
     <p>{{ $tc('car', 0) }}</p>
     <p>{{ $tc('car', 1) }}</p>
     <p>{{ $tc('car', 10, { count: 10 }) }}</p>
