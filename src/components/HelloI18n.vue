@@ -16,7 +16,7 @@
     </div>
 
     <h4>{{ $t('message') }}</h4>
-    <h4>{{ $t('hello') }}</h4>
+    <h4 v-html="$t('hello')"></h4>
 
     <div class="hierarchy">
       <ul>
@@ -84,17 +84,17 @@ export default {
 <i18n>
 {
   "en": {
-    "hello": "Hello i18n in SFC!",
+    "hello": "Hello <br>i18n in SFC!",
     "parent": "parent",
     "child": "child"
   },
   "hi": {
-    "hello": "एसएफसी में नमस्ते i18n!",
+    "hello": "एसएफसी <br> में नमस्ते i18n!",
     "parent": "माता-पिता",
     "child": "बालक"
   },
   "fr": {
-    "hello": "Bonjour i18n dans SFC",
+    "hello": "Bonjour <br> i18n dans SFC",
     "parent": "parent",
     "child": "enfant"
   }
