@@ -6,5 +6,9 @@
     "child": {
       "inner_child": "भीतर के बच्चा"
     }
+  },
+  "address": {
+    "homeAddress": "घर का पता",
+    "missingHomeAddress": "कृपया प्रदान करें @:address.homeAddress"
   }
 }

@@ -15,6 +15,10 @@
       {{ $t("selected_language", { language: selected_language }) }}
     </div>
 
+    <h4>Linked locale messages</h4>
+    <p>{{ $t('address.homeAddress') }}</p>
+    <p>{{ $t('address.missingHomeAddress') }}</p>
+
     <h4>Number localization</h4>
     <p>{{ $n(100, 'currency', 'en-US') }}</p>
     <p>{{ $n(100, 'currency', 'ja-JP') }}</p>

@@ -6,5 +6,9 @@
     "child": {
       "inner_child": "Enfant intérieur"
     }
+  },
+  "address": {
+    "homeAddress": "Adresse du domicile",
+    "missingHomeAddress": "Veuillez donner @:address.homeAddress"
   }
 }
