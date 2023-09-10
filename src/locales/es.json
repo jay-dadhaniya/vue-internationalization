@@ -1,0 +1,15 @@
+{
+  "message": "¡Hola i18n de Global!",
+  "car": "sin coche | un coche | {count} coches",
+  "language_select_info": "Seleccione el idioma que desea utilizar",
+  "selected_language": "Has seleccionado '{language}'",
+  "parent": {
+    "child": {
+      "inner_child": "Niño interior"
+    }
+  },
+  "address": {
+    "homeAddress": "Direccion de casa",
+    "missingHomeAddress": "Por favor proporcione @:address.homeAddress"
+  }
+}

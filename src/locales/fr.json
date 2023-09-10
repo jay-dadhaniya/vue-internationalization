@@ -1,7 +1,8 @@
 {
-  "message": "Bonjour i18n de Global!",
+  "message": "Bonjour i18n de Global !",
+  "car": "pas de voiture | une voiture | {count} voitures",
   "language_select_info": "Sélectionnez la langue que vous souhaitez utiliser",
-  "selected_language": "Vous avez sélectionné la langue '{language}'",
+  "selected_language": "Vous avez sélectionné '{language}'",
   "parent": {
     "child": {
       "inner_child": "Enfant intérieur"
@@ -9,6 +10,6 @@
   },
   "address": {
     "homeAddress": "Adresse du domicile",
-    "missingHomeAddress": "Veuillez donner @:address.homeAddress"
+    "missingHomeAddress": "Veuillez fournir @:address.homeAddress"
   }
 }
