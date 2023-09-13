@@ -1,7 +1,8 @@
 {
   "message": "ग्लोबल की ओर से नमस्ते i18n!",
-  "language_select_info": "उस भाषा का चयन करें जिसका आप उपयोग करना चाहते हैं",
-  "selected_language": "आपने '{language}' भाषा चुनी है",
+  "car": "कोई कार नहीं | एक कार | {count} कारें",
+  "language_select_info": "वह भाषा चुनें जिसका आप उपयोग करना चाहते हैं",
+  "selected_language": "आपने '{language}' चुना है",
   "parent": {
     "child": {
       "inner_child": "भीतर के बच्चा"
@@ -9,6 +10,6 @@
   },
   "address": {
     "homeAddress": "घर का पता",
-    "missingHomeAddress": "कृपया प्रदान करें @:address.homeAddress"
+    "missingHomeAddress": "कृपया @:address.homeAddress प्रदान करें"
   }
 }
