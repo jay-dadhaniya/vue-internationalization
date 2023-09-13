@@ -4,7 +4,7 @@ const { Translate } = require('@google-cloud/translate').v2;
 
 const enTranslations = require('./en.json');
 const targetLocales = ['hi', 'fr', 'es']; // Add more locales as needed
-const googleApiKey = 'AIzaSyC9EGVsz0QF9d_412LIilFmJHsI2WwL7wY'; // Replace with your API key
+const googleApiKey = 'YOUR_GOOGLE_ID'; // Replace with your API key
 
 const translate = new Translate({ key: googleApiKey });
 
